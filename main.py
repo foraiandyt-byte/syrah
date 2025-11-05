@@ -23,7 +23,8 @@ except Exception as e:
     st.stop()
 
 # --- Streamlit App UI ---
-primaryColor="poppy red"
+[theme]
+textColor="DarkGoldenrod"
 st.set_page_config(
     page_title="Syrah",
     page_icon="@",
