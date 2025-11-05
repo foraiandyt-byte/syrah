@@ -29,18 +29,43 @@ st.set_page_config(
     page_icon="@",
     layout="centered",
 )
-# Inject CSS for poppy red background and black text
+import streamlit as st
+
 st.markdown(
     """
     <style>
+    /* Main background */
     .stApp {
         background-color: #ff3838; /* Poppy red */
-        color: black; /* Black text */
-    }
-    section[data-testid="stSidebar"] {
-        background-color: #ff4d4d; /* Slightly lighter red for sidebar */
         color: black;
     }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #ff4d4d; /* lighter poppy red */
+        color: black;
+    }
+
+    /* Header */
+    header[data-testid="stHeader"] {
+        background-color: #ff3838;
+    }
+
+    /* Toolbar (top-right corner) */
+    div[data-testid="stToolbar"] {
+        background-color: #ff3838;
+    }
+
+    /* Footer (bottom of the app) */
+    footer {
+        background-color: #ff3838;
+    }
+
+    /* Optional: remove Streamlit watermark (not recommended for public apps)
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    */
     </style>
     """,
     unsafe_allow_html=True
