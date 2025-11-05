@@ -28,8 +28,22 @@ st.set_page_config(
     page_title="Syrah",
     page_icon="@",
     layout="centered",
-    theme.base=="dark",
-    theme.textColor=="DarkOrchid",
+)
+# Inject CSS for poppy red background and black text
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #ff3838; /* Poppy red */
+        color: black; /* Black text */
+    }
+    section[data-testid="stSidebar"] {
+        background-color: #ff4d4d; /* Slightly lighter red for sidebar */
+        color: black;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
 )
 
 # Initialize chat history in session state if it doesn't exist
