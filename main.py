@@ -27,9 +27,9 @@ except Exception as e:
 st.set_page_config(
     page_title="Syrah",
     page_icon="@",
-    layout="centered"
-    theme.base="dark"
-    theme.textColor="DarkOrchid"
+    layout="centered",
+    theme.base="dark",
+    theme.textColor="DarkOrchid",
 )
 
 # Initialize chat history in session state if it doesn't exist
