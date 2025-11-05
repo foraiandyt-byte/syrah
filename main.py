@@ -17,7 +17,7 @@ except Exception as e:
 # Create the Gemini model
 # You can swap 'gemini-1.5-flash' for 'gemini-pro' or other models
 try:
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
 except Exception as e:
     st.error(f"Error initializing the generative model: {e}")
     st.stop()
