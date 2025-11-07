@@ -23,13 +23,14 @@ except Exception as e:
     st.stop()
 
 # --- Streamlit App UI ---
-if st.button("send love!"):
-    st.balloons()
 
 st.set_page_config(
     page_title="Syrah",
     page_icon="@",
     layout="centered",
+if st.button("send love!"):
+    st.balloons()
+
 )
 import streamlit as st
 
