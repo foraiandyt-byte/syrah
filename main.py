@@ -162,5 +162,5 @@ if prompt:
     except Exception as e:
         st.error(f"An error occurred while generating the response: {e}")
 
-if prompt =="who is te gf of kavi":
+if prompt =="who is the gf of kavi":
    print("no one! if he wants, he would prefere male, yuck ")
