@@ -29,6 +29,8 @@ st.set_page_config(
     page_icon="@",
     layout="centered",
 )
+if st.button("send love!"):
+    st.ballons()
 import streamlit as st
 
 # Initialize chat history in session state if it doesn't exist
