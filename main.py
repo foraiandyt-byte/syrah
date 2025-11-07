@@ -30,7 +30,7 @@ st.set_page_config(
     layout="centered",
 
 )
- if st.button("send love!"):
+if st.button("send love!"):
        st.balloons()
 
 import streamlit as st
