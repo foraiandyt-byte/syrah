@@ -24,7 +24,7 @@ except Exception as e:
 
 # --- Streamlit App UI ---
 if st.button("send love!"):
-    st.ballons()
+    st.balloons()
 
 st.set_page_config(
     page_title="Syrah",
