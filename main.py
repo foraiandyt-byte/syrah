@@ -28,10 +28,11 @@ st.set_page_config(
     page_title="Syrah",
     page_icon="@",
     layout="centered",
-    if st.button("send love!"):
-       st.balloons()
 
 )
+ if st.button("send love!"):
+       st.balloons()
+
 import streamlit as st
 
 # Initialize chat history in session state if it doesn't exist
