@@ -3,6 +3,9 @@ import google.generativeai as genai
 import os
 from PIL import Image # We need this to handle the image file
 
+if st.button("send love!"):
+    st.ballons
+
 API_KEY = "AIzaSyBWSM9wa1c1dV4cXMyT3LCm3clA9jKCJxI" 
 
 # Configure the generative AI library
@@ -29,8 +32,6 @@ st.set_page_config(
     page_icon="@",
     layout="centered",
 )
-if st.button("send love!"):
-    st.ballons()
 import streamlit as st
 
 # Initialize chat history in session state if it doesn't exist
