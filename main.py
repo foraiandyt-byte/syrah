@@ -3,9 +3,6 @@ import google.generativeai as genai
 import os
 from PIL import Image # We need this to handle the image file
 
-if st.button("send love!"):
-    st.ballons
-
 API_KEY = "AIzaSyBWSM9wa1c1dV4cXMyT3LCm3clA9jKCJxI" 
 
 # Configure the generative AI library
@@ -26,6 +23,8 @@ except Exception as e:
     st.stop()
 
 # --- Streamlit App UI ---
+if st.button("send love!"):
+    st.ballons()
 
 st.set_page_config(
     page_title="Syrah",
