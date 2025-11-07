@@ -31,46 +31,6 @@ st.set_page_config(
 )
 import streamlit as st
 
-st.markdown(
-    """
-    <style>
-    /* Main background */
-    .stApp {
-        background-color: #ff3838; /* Poppy red */
-        color: black;
-    }
-
-    /* Sidebar */
-    section[data-testid="stSidebar"] {
-        background-color: #ff4d4d; /* lighter poppy red */
-        color: black;
-    }
-
-    /* Header */
-    header[data-testid="stHeader"] {
-        background-color: #ff3838;
-    }
-
-    /* Toolbar (top-right corner) */
-    div[data-testid="stToolbar"] {
-        background-color: #ff3838;
-    }
-
-    /* Footer (bottom of the app) */
-    footer {
-        background-color: #ff3838;
-    }
-
-    /* Optional: remove Streamlit watermark (not recommended for public apps)
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    */
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # Initialize chat history in session state if it doesn't exist
 # History now supports an optional 'image' key for multimodal messages
 if "chat_history" not in st.session_state:
