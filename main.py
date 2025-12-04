@@ -5,7 +5,7 @@ from PIL import Image # We need this to handle the image file
 
 # Configure the generative AI library
 try:
-    genai.configure(api_key="AIzaSyBaa2Yupa3-tECTJmt_-YfuyWW9gHo4_U0I")
+    genai.configure(api_key="AIzaSyBaa2Yupa3-tECTJmt_-YfuyWW9gHo4_U0")
 except Exception as e:
     st.error(f"Error configuring the Gemini API: {e}")
     st.stop()
