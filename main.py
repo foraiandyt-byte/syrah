@@ -3,11 +3,11 @@ import google.generativeai as genai
 import os
 from PIL import Image # We need this to handle the image file
 
-API_KEY = "AIzaSyBWSM9wa1c1dV4cXMyT3LCm3clA9jKCJxI" 
+API_KEY = AIzaSyBaa2Yupa3-tECTJmt_-YfuyWW9gHo4_U0" 
 
 # Configure the generative AI library
 try:
-    genai.configure(api_key="AIzaSyBWSM9wa1c1dV4cXMyT3LCm3clA9jKCJxI")
+    genai.configure(api_key="AIzaSyBaa2Yupa3-tECTJmt_-YfuyWW9gHo4_U0I")
 except Exception as e:
     st.error(f"Error configuring the Gemini API: {e}")
     st.stop()
