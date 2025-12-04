@@ -3,8 +3,6 @@ import google.generativeai as genai
 import os
 from PIL import Image # We need this to handle the image file
 
-API_KEY = AIzaSyBaa2Yupa3-tECTJmt_-YfuyWW9gHo4_U0" 
-
 # Configure the generative AI library
 try:
     genai.configure(api_key="AIzaSyBaa2Yupa3-tECTJmt_-YfuyWW9gHo4_U0I")
